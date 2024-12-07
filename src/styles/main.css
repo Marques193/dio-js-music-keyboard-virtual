@@ -55,9 +55,9 @@ header .column span {
   height: 20px;
   width: 20px;
   background-color: #8c8c8c;
+  border-radius: inherit;
   top: 50%;
   left: 0.3rem;
-  border-radius: inherit;
   position: absolute;
   transform: translateY(-50%);
   transition: all 0.3s ease;
@@ -72,13 +72,13 @@ header .column span {
   display: flex;
   margin-top: 40px;
 }
+
 .piano-keys .key {
   cursor: pointer;
   user-select: none;
   list-style: none;
   color: #a2a2a2;
   position: relative;
-  text-transform: uppercase;
 }
 
 .piano-keys .white {
@@ -93,13 +93,14 @@ header .column span {
   width: 44px;
   height: 140px;
   z-index: 2;
-  margin: 0 -22px 0 -22px;
+  margin: 0px -22px 0px -22px;
   border: 1px solid black;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0px 0px 5px 5px;
   background: linear-gradient(#333, #000);
 }
 
 .piano-keys span {
+  text-transform: uppercase;
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -108,13 +109,13 @@ header .column span {
 }
 
 .piano-keys .white.active {
-  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom #fff 0%, #eee 100%);
+  box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
 }
 
 .piano-keys .black.active {
-  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
-  background: linear-gradient(to bottom #000, #434343);
+  box-shadow: inset -5px -5px 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, #000, #434343);
 }
 
 .piano-keys .key.hide span {
